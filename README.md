@@ -66,6 +66,20 @@ The app demonstrates how to **lift state up** and share data between components.
 
 ---
 
+## Step 5 🐼 — Add Burger State
+
+- Added `useState` to App component
+- Created `stack` state to store selected ingredients
+
+→ Why it matters:
+- This is the data that changes when users add/remove ingredients
+- It controls what appears in the burger stack
+
+→ Engineering principle:
+- State management → handling dynamic data in React
+
+---
+
 ## Key Concepts
 
 - **Component** → reusable UI building block

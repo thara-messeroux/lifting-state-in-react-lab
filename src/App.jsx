@@ -1,5 +1,6 @@
 // src/App.jsx
 
+import { useState } from 'react'; // import state
 import "./App.css";
 
 const App = () => {
@@ -19,6 +20,10 @@ const App = () => {
     { name: "Cheddar Cheese", color: "#FDE18B" },
     { name: "Swiss Cheese", color: "#F1E1A8" },
   ];
+
+  const [stack, setStack] = useState([]);
+  // stack = current burger
+  // setStack = function to update burger
 
   return (
     <main>
