@@ -1,7 +1,9 @@
 // src/App.jsx
 
-import { useState } from 'react'; // import state
+import { useState } from "react"; // import state
 import "./App.css";
+import IngredientList from "./components/IngredientList/IngredientList";
+import BurgerStack from "./components/BurgerStack/BurgerStack";
 
 const App = () => {
   const availableIngredients = [
@@ -28,7 +30,11 @@ const App = () => {
   return (
     <main>
       <h1>Burger Stacker</h1>
-      <section>{/* List & Stack components */}</section>
+      <section>
+        {/* List & Stack components */}
+        <IngredientList />
+        <BurgerStack />
+      </section>
     </main>
   );
 };

@@ -80,6 +80,20 @@ The app demonstrates how to **lift state up** and share data between components.
 
 ---
 
+## Step 6 🐯 — Render Components
+
+- Imported IngredientList and BurgerStack into App
+- Rendered both components inside the section
+
+→ Why it matters:
+- Displays the UI structure of the app
+- Connects all components to the main App
+
+→ Engineering principle:
+- Component composition → combining smaller components into a full UI
+
+---
+
 ## Key Concepts
 
 - **Component** → reusable UI building block
