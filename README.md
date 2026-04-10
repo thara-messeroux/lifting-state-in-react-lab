@@ -94,6 +94,36 @@ The app demonstrates how to **lift state up** and share data between components.
 
 ---
 
+## Step 7 🐳 — Understanding Props Usage
+
+- IngredientList receives all ingredients
+- BurgerStack receives only selected ingredients (stack)
+
+→ Why it matters:
+- Each component gets only the data it needs
+
+→ Engineering principle:
+- Separation of concerns
+
+---
+
+## Step 8 🐧 — Render Ingredient Lists
+
+- Mapped through ingredients in IngredientList
+- Displayed each ingredient with name and color
+- Added "+" button to each item
+- Mapped through stack in BurgerStack
+- Displayed each selected ingredient with "X" button
+
+→ Why it matters:
+- Converts data into visible UI
+- Allows users to see ingredients and burger stack
+
+→ Engineering principle:
+- Rendering lists → dynamically generating UI from data
+
+---
+
 ## Key Concepts
 
 - **Component** → reusable UI building block
