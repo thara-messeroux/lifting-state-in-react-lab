@@ -1,11 +1,13 @@
 // src/App.jsx
 
-import { useState } from "react"; // import state
+import { useState } from "react"; // lets React track changing data
 import "./App.css";
 import IngredientList from "./components/IngredientList/IngredientList";
 import BurgerStack from "./components/BurgerStack/BurgerStack";
 
 const App = () => {
+  // This is the full list of ingredient options.
+  // It stays fixed and does not change.
   const availableIngredients = [
     { name: "Kaiser Bun", color: "saddlebrown" },
     { name: "Sesame Bun", color: "sandybrown" },
@@ -15,7 +17,7 @@ const App = () => {
     { name: "Soy Patty", color: "#3F250B" },
     { name: "Black Bean Patty", color: "#3F250B" },
     { name: "Chicken Patty", color: "burlywood" },
-    { name: "Lettuce", color: "lawngreen" },
+    { name: "Lettuce", color: "limegreen" },
     { name: "Tomato", color: "tomato" },
     { name: "Bacon", color: "maroon" },
     { name: "Onion", color: "lightyellow" },
@@ -23,16 +25,27 @@ const App = () => {
     { name: "Swiss Cheese", color: "#F1E1A8" },
   ];
 
+  // stack = the burger the user is building
+  // setStack = the tool used to update the burger
   const [stack, setStack] = useState([]);
-  // stack = current burger
-  // setStack = function to update burger
+
+  // This function adds one ingredient to the burger.
+  // We make a new array so React notices the change and updates the screen.
+  const addToBurger = (ingredient) => {
+    setStack([...stack, ingredient]);
+  };
 
   return (
     <main>
       <h1>Burger Stacker</h1>
       <section>
-        {/* List & Stack components */}
-        <IngredientList ingredients={availableIngredients} />
+        {/* Left side: shows all available ingredients */}
+        <IngredientList
+          ingredients={availableIngredients}
+          addToBurger={addToBurger}
+        />
+
+        {/* Right side: shows the burger the user is building */}
         <BurgerStack ingredients={stack} />
       </section>
     </main>

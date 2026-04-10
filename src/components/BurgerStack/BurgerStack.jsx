@@ -4,25 +4,22 @@
 // the stack of ingredients that the user has chosen
 // It will receive the list of ingredients as props from App.jsx
 
-// This component shows the burger the user is building (right side)
+
+// This component shows the burger stack on the right side.
+// It receives the selected ingredients from App.
 
 const BurgerStack = (props) => {
   return (
     <ul>
       {props.ingredients.map((ingredient, index) => (
-        // Loop through selected ingredients (stack)
         <li
-          // Loop through selected ingredients (stack)
-          key={index} // unique key for React 
-
-          // Set the background color of each item to the ingredient's color
-          style={{ backgroundColor: ingredient.color }} // same styling
+          key={index} // gives each list item a unique identity for React
+          style={{ backgroundColor: ingredient.color }} // colors the ingredient row
         >
-          // Loop through selected ingredients (stack)
-          {ingredient.name} {/* show ingredient name */}
+          {ingredient.name} {/* shows the selected ingredient name */}
 
           <button>
-            X {/* this will later REMOVE ingredient */}
+            X {/* this button will later remove the ingredient */}
           </button>
         </li>
       ))}

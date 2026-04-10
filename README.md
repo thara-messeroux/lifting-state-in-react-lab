@@ -124,6 +124,22 @@ The app demonstrates how to **lift state up** and share data between components.
 
 ---
 
+## Step 9 🐬 — Add Ingredients to Burger
+
+- Created addToBurger function in App
+- Passed function to IngredientList as props
+- Connected "+" button to trigger state update
+
+→ Why it matters:
+- Enables user interaction
+- Updates burger dynamically
+
+→ Engineering principle:
+- Lifting state → child triggers parent state change
+- Event handling → responding to user actions
+
+---
+
 ## Key Concepts
 
 - **Component** → reusable UI building block
