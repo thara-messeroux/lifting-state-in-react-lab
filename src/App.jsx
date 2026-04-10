@@ -35,6 +35,18 @@ const App = () => {
     setStack([...stack, ingredient]);
   };
 
+  // This function removes one ingredient from the burger.
+  // We remove it by its position in the stack.
+  const removeFromBurger = (indexToRemove) => {
+    const newStack = stack.filter((_, index) => index !== indexToRemove);
+    // Keep every ingredient except the one we clicked
+
+    setStack(newStack);
+    // Update the burger with the new list
+  };
+
+  <button onClick={() => props.removeFromBurger(index)}>X</button>;
+
   return (
     <main>
       <h1>Burger Stacker</h1>
@@ -50,6 +62,6 @@ const App = () => {
       </section>
     </main>
   );
-};
+};;
 
 export default App;

@@ -140,6 +140,21 @@ The app demonstrates how to **lift state up** and share data between components.
 
 ---
 
+## Step 10 🐙 — Add Remove Function in App
+
+- Added `removeFromBurger` function to `App`
+- Used `filter()` to make a new stack without the clicked ingredient
+
+→ Why it matters:
+- This prepares the app to remove ingredients safely
+- The parent still controls the shared burger state
+
+→ Engineering principle:
+- Immutability → create a new array instead of changing the old one
+- State management → parent updates shared data
+
+---
+
 ## Key Concepts
 
 - **Component** → reusable UI building block
