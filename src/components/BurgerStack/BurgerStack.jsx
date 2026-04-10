@@ -18,8 +18,10 @@ const BurgerStack = (props) => {
         >
           {ingredient.name} {/* shows the selected ingredient name */}
           {/* This button will allow the user to remove an ingredient from the stack.
-              It calls the removeFromBurger function passed down from App, with the index of the ingredient to remove. */ }
-          <button onClick={() => props.removeFromBurger(index)}>X</button>
+              It calls the removeFromBurger function passed down from App, with the index of the ingredient to remove. */}
+          <button onClick={() => props.removeFromBurger(index)}>
+            X {/* when clicked, remove THIS ingredient */}
+          </button>
         </li>
       ))}
     </ul>

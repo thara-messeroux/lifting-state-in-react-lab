@@ -155,6 +155,23 @@ The app demonstrates how to **lift state up** and share data between components.
 
 ---
 
+## Step 11 🐙 — Connect Remove Button
+
+- Passed `removeFromBurger` from `App` to `BurgerStack`
+- Removed an incorrect floating button from `App.jsx`
+- Connected the `X` button so selected ingredients can be removed
+
+→ Why it matters:
+- The remove button needs access to the parent function
+- This completes the add/remove interaction in the app
+
+→ Engineering principle:
+- Props → passing functions from parent to child
+- Event handling → clicking a button updates state
+- Lifting state → the parent owns and updates shared data
+
+---
+
 ## Key Concepts
 
 - **Component** → reusable UI building block

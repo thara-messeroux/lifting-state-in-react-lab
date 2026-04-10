@@ -45,8 +45,6 @@ const App = () => {
     // Update the burger with the new list
   };
 
-  <button onClick={() => props.removeFromBurger(index)}>X</button>;
-
   return (
     <main>
       <h1>Burger Stacker</h1>
@@ -58,10 +56,10 @@ const App = () => {
         />
 
         {/* Right side: shows the burger the user is building */}
-        <BurgerStack ingredients={stack} />
+        <BurgerStack ingredients={stack} removeFromBurger={removeFromBurger} />
       </section>
     </main>
   );
-};;
+};
 
 export default App;
