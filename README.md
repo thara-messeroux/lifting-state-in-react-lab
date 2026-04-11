@@ -1,4 +1,4 @@
-# Lifting State in React Lab ✊🏾
+# Lifting State in React Lab
 
 ## Overview
 This project is a burger builder application built with React.
@@ -12,7 +12,7 @@ The app demonstrates how to **lift state up** and share data between components.
 
 ---
 
-## Setup Completed ✅
+## Setup Completed
 
 ### Step 1 🐣 — Project Setup
 - Created project using Vite
