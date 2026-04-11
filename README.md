@@ -205,9 +205,12 @@ The app demonstrates how to **lift state up** and share data between components.
 
 ---
 
-## Key Takeaways
+## Key Takeaways ✊🏾
 
-- React apps are built using small reusable components
-- Data should live in one place (single source of truth)
-- State is lifted to allow multiple components to stay in sync
-- UI updates automatically when state changes
+- React apps are built using small, reusable components → easier to scale and maintain  
+- State should live in one place (single source of truth) → prevents data inconsistencies  
+- Lifting state allows multiple components to stay in sync → shared data flows through the parent  
+- Props are used to pass both data and functions from parent to child → enables communication  
+- User actions (clicks) trigger state updates → UI updates automatically (reactivity)  
+- Never mutate state directly → always create a new copy (`...`, `filter`) so React detects changes  
+- Reusable components reduce duplicate code → cleaner, more professional architecture  
