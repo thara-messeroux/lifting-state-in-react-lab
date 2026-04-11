@@ -8,21 +8,18 @@
 // This component shows the burger stack on the right side.
 // It receives the selected ingredients from App.
 
+import Ingredient from "../Ingredient/Ingredient";
+
 const BurgerStack = (props) => {
   return (
     <ul>
       {props.ingredients.map((ingredient, index) => (
-        <li
-          key={index} // gives each list item a unique identity for React
-          style={{ backgroundColor: ingredient.color }} // colors the ingredient row
-        >
-          {ingredient.name} {/* shows the selected ingredient name */}
-          {/* This button will allow the user to remove an ingredient from the stack.
-              It calls the removeFromBurger function passed down from App, with the index of the ingredient to remove. */}
-          <button onClick={() => props.removeFromBurger(index)}>
-            X {/* when clicked, remove THIS ingredient */}
-          </button>
-        </li>
+        <Ingredient
+          key={index}
+          ingredient={ingredient}
+          buttonLabel="X"
+          onClick={() => props.removeFromBurger(index)}
+        />
       ))}
     </ul>
   );

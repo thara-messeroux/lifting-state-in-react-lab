@@ -172,6 +172,22 @@ The app demonstrates how to **lift state up** and share data between components.
 
 ---
 
+## Step 12 🏆 — Level Up: Reusable Ingredient Component
+
+- Created reusable `Ingredient` component
+- Replaced duplicated `<li>` code in IngredientList and BurgerStack
+- Passed dynamic props: ingredient, buttonLabel, and onClick
+
+→ Why it matters:
+- Reduces duplicate code
+- Makes components reusable and cleaner
+
+→ Engineering principle:
+- Reusability → write once, use everywhere
+- Component abstraction → simplify complex UI
+
+---
+
 ## Key Concepts
 
 - **Component** → reusable UI building block
